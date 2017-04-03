@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D5DCC4DC1E92AAA6004EF696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC4DB1E92AAA6004EF696 /* AppDelegate.swift */; };
-		D5DCC4DE1E92AAA6004EF696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC4DD1E92AAA6004EF696 /* ViewController.swift */; };
 		D5DCC4E11E92AAA6004EF696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC4DF1E92AAA6004EF696 /* Main.storyboard */; };
 		D5DCC4E31E92AAA6004EF696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC4E21E92AAA6004EF696 /* Assets.xcassets */; };
 		D5DCC4E61E92AAA6004EF696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC4E41E92AAA6004EF696 /* LaunchScreen.storyboard */; };
+		D5DCC4F21E92AAF9004EF696 /* GPXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC4F11E92AAF9004EF696 /* GPXViewController.swift */; };
+		D5DCC4F41E92ABDC004EF696 /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC4F31E92ABDC004EF696 /* GPX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5DCC4D81E92AAA6004EF696 /* Trax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DCC4DB1E92AAA6004EF696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5DCC4DD1E92AAA6004EF696 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5DCC4E01E92AAA6004EF696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5DCC4E21E92AAA6004EF696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5DCC4E51E92AAA6004EF696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5DCC4E71E92AAA6004EF696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DCC4F11E92AAF9004EF696 /* GPXViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXViewController.swift; sourceTree = "<group>"; };
+		D5DCC4F31E92ABDC004EF696 /* GPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		D5DCC4DA1E92AAA6004EF696 /* Trax */ = {
 			isa = PBXGroup;
 			children = (
-				D5DCC4DB1E92AAA6004EF696 /* AppDelegate.swift */,
-				D5DCC4DD1E92AAA6004EF696 /* ViewController.swift */,
 				D5DCC4DF1E92AAA6004EF696 /* Main.storyboard */,
+				D5DCC4F01E92AAD6004EF696 /* Modal */,
+				D5DCC4EF1E92AAD2004EF696 /* View */,
+				D5DCC4EE1E92AACA004EF696 /* Controller */,
+				D5DCC4ED1E92AAB4004EF696 /* Supporting Files */,
+			);
+			path = Trax;
+			sourceTree = "<group>";
+		};
+		D5DCC4ED1E92AAB4004EF696 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCC4DB1E92AAA6004EF696 /* AppDelegate.swift */,
 				D5DCC4E21E92AAA6004EF696 /* Assets.xcassets */,
 				D5DCC4E41E92AAA6004EF696 /* LaunchScreen.storyboard */,
 				D5DCC4E71E92AAA6004EF696 /* Info.plist */,
 			);
-			path = Trax;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5DCC4EE1E92AACA004EF696 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCC4F11E92AAF9004EF696 /* GPXViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D5DCC4EF1E92AAD2004EF696 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D5DCC4F01E92AAD6004EF696 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCC4F31E92ABDC004EF696 /* GPX.swift */,
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +132,7 @@
 					D5DCC4D71E92AAA6004EF696 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7HAUD8EZY3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DCC4DE1E92AAA6004EF696 /* ViewController.swift in Sources */,
+				D5DCC4F21E92AAF9004EF696 /* GPXViewController.swift in Sources */,
 				D5DCC4DC1E92AAA6004EF696 /* AppDelegate.swift in Sources */,
+				D5DCC4F41E92ABDC004EF696 /* GPX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
