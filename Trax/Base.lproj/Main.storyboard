@@ -20,11 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="waL-Rg-WRu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="waL-Rg-WRu" secondAttribute="trailing" id="Qwf-Qw-g9I"/>
+                            <constraint firstItem="waL-Rg-WRu" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Utq-Wc-J5L"/>
+                            <constraint firstItem="waL-Rg-WRu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aCz-MO-uoc"/>
+                            <constraint firstItem="waL-Rg-WRu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g0U-iQ-VFV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="waL-Rg-WRu" id="ZDQ-vn-g2W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
