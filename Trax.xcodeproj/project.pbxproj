@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D518D8E31E9327BF00DC01E4 /* MKGPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D8E21E9327BF00DC01E4 /* MKGPX.swift */; };
+		D593D8D31E9BBD0900695414 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D593D8D21E9BBD0900695414 /* ImageViewController.swift */; };
+		D593D8D51E9BC59400695414 /* EditWaypointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D593D8D41E9BC59400695414 /* EditWaypointViewController.swift */; };
 		D5DCC4DC1E92AAA6004EF696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC4DB1E92AAA6004EF696 /* AppDelegate.swift */; };
 		D5DCC4E11E92AAA6004EF696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC4DF1E92AAA6004EF696 /* Main.storyboard */; };
 		D5DCC4E31E92AAA6004EF696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC4E21E92AAA6004EF696 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		D518D8E21E9327BF00DC01E4 /* MKGPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGPX.swift; sourceTree = "<group>"; };
+		D593D8D21E9BBD0900695414 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		D593D8D41E9BC59400695414 /* EditWaypointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWaypointViewController.swift; sourceTree = "<group>"; };
 		D5DCC4D81E92AAA6004EF696 /* Trax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DCC4DB1E92AAA6004EF696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5DCC4E01E92AAA6004EF696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D5DCC4F11E92AAF9004EF696 /* GPXViewController.swift */,
+				D593D8D21E9BBD0900695414 /* ImageViewController.swift */,
+				D593D8D41E9BC59400695414 /* EditWaypointViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			files = (
 				D5DCC4F21E92AAF9004EF696 /* GPXViewController.swift in Sources */,
 				D518D8E31E9327BF00DC01E4 /* MKGPX.swift in Sources */,
+				D593D8D51E9BC59400695414 /* EditWaypointViewController.swift in Sources */,
+				D593D8D31E9BBD0900695414 /* ImageViewController.swift in Sources */,
 				D5DCC4DC1E92AAA6004EF696 /* AppDelegate.swift in Sources */,
 				D5DCC4F41E92ABDC004EF696 /* GPX.swift in Sources */,
 			);
